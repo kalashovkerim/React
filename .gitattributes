@@ -1,0 +1,2 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+authorization/src/resources/videoBg.mp4 filter=lfs diff=lfs merge=lfs -text
