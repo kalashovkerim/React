@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b007234b-0fe6-43c1-b56c-120690317843" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/src/Components/TodoForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/src/Components/TodoForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist/src/Styles/TodoForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/src/Styles/TodoForm.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/test/authorization/src/resources",
+    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/test/todolist/src/resources",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kerim\WebstormProjects\test\todolist\src\resources" />
       <recent name="C:\Users\kerim\WebstormProjects\test\authorization\src\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,6 +99,7 @@
       <workItem from="1677712038075" duration="643000" />
       <workItem from="1677770411255" duration="686000" />
       <workItem from="1677872466163" duration="10810000" />
+      <workItem from="1678035380499" duration="8779000" />
     </task>
     <servers />
   </component>

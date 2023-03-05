@@ -1,47 +1,56 @@
 import React, {useEffect, useState} from 'react';
 import '../Styles/TodoForm.css'
-//import JsonData from '../info.json'
+
+
 function TodoForm() {
-    const [id, setId] = useState("1");
-    const [task, setTask] = useState("This is task");
-    const [description, setDesc] = useState("This is desc");
-    const [done, setDone] = useState(false);
-
-    // save data to localStorage
-    const saveStateToLocalStorage = () => {
-        localStorage.setItem('state', JSON.stringify({id, task, description, done }));
-    }
-    function getData() {
-        let data = localStorage.getItem('state');
-        return data ? JSON.parse(data) : [];
-    }
-
-    // Fetch data from local storage
-    const getStateFromLocalStorage = () => {
-        let data = getData();
-        if(data !== undefined) {
-            setId(data.id)
-            setTask(data.task);
-            setDesc(data.description);
-            setDone(data.done);
-        }
-    }
+    const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos') || '[]'));
 
     useEffect(() => {
-        // Fetch data from local storage
-        getStateFromLocalStorage();
+        const storedTodos = JSON.parse(localStorage.getItem('todos') || '[]');
+        setTodos(storedTodos);
     }, []);
 
+    // Save todos to local storage whenever the state changes
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos]);
+
+    const addTodo = () => {
+        let task = document.getElementById("input1").value;
+        let description = document.getElementById("input2").value;
+        if(task == "" || description == "")
+        {
+            alert("Enter the data");
+        }
+        else
+        {
+            const newTodo = { task, description, done: false };
+            setTodos([...todos, newTodo]);
+        }
+
+    };
+    const deleteTask = (index) =>
+    {
+        let newTodos = [...todos];
+        newTodos = newTodos.filter(task => task.done !== true)
+        setTodos(newTodos);
+    }
+    const toggleDone = (index) => {
+        const newTodos = [...todos];
+        newTodos[index].done = !newTodos[index].done;
+        setTodos(newTodos);
+        setTimeout(function() {deleteTask(index); }, 1000);
+    };
     const DisplayData = () => {
-        const jsonData = getData();
-        const data = jsonData ? JSON.parse(jsonData) : [];
         return (
             <tbody>
-            {data.map((info) => (
-                <tr key={info.id}>
-                    <td>{info.task}</td>
-                    <td>{info.description}</td>
-                    <td><input type="checkbox" defaultChecked={info.done}/></td>
+            {todos.map((todo, index) => (
+                <tr key={index}>
+                    <td>{todo.task}</td>
+                    <td>{todo.description}</td>
+                    <td>
+                        <input type="checkbox" checked={todo.done}  onChange={() => toggleDone(index)} />
+                    </td>
                 </tr>
             ))}
             </tbody>
@@ -49,11 +58,12 @@ function TodoForm() {
     }
     return (
         <div className="bg">
+            <h1>TODOLIST</h1>
             <div className="main">
                 <div className="form">
-                    <input placeholder="Enter the task"/>
-                    <input placeholder="Enter the description"/>
-                    <button onClick={saveStateToLocalStorage}>Add</button>
+                    <input id="input1" placeholder="Enter the task"  />
+                    <input id="input2" placeholder="Enter the description" />
+                    <button onClick={addTodo}>Add</button>
                 </div>
                 <div className="table-wrapper">
                     <table className="fl-table">
