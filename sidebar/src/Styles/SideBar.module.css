@@ -1,0 +1,19 @@
+.bg
+{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 1000px;
+}
+
+.side
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: red;
+
+
+}

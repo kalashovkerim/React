@@ -1,0 +1,74 @@
+{
+  "topics" : [
+    {
+      "id": "1",
+      "name": "Введение в C#",
+      "subtopics" : [
+        {
+          "id": "1",
+          "name": "subtopics 1"
+        },
+        {
+          "id": "2",
+          "name": "subtopics 2"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Основы программирования на C#",
+      "subtopics" : [
+        {
+          "id": "3",
+          "name": "subtopics 1"
+        },
+        {
+          "id": "4",
+          "name": "subtopics 2"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Классы, структуры и пространства имен",
+      "subtopics" : [
+        {
+          "id": "5",
+          "name": "subtopics 1"
+        },
+        {
+          "id": "6",
+          "name": "subtopics 2"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Объектно-ориентированное программирование",
+      "subtopics" : [
+        {
+          "id": "7",
+          "name": "subtopics 1"
+        },
+        {
+          "id": "8",
+          "name": "subtopics 2"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Обработка исключений",
+      "subtopics" : [
+        {
+          "id": "9",
+          "name": "subtopics 1"
+        },
+        {
+          "id": "10",
+          "name": "subtopics 2"
+        }
+      ]
+    }
+  ]
+}
