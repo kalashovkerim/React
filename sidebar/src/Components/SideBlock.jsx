@@ -4,9 +4,7 @@ import Topics from "../topics.json"
 import SideSubBlock from "./SideSubBlock";
 function SideBlock(props) {
 
-
     const [access,setAccess] = useState(false)
-
     function ShowTopics(cuId) {
         setAccess((prevAccess) => !prevAccess);
     }

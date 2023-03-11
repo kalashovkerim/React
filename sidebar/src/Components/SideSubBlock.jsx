@@ -5,13 +5,23 @@ import SideBlock from "./SideBlock";
 
 function SideSubBlock(props) {
 
+
+    const desiredTopic = Topics.topics.find(topic => topic.id === props.topId);
+    const subtopics = desiredTopic.subtopics;
+
+
+    function SubHandler(text)
+    {
+        console.log(text);
+    }
+
     return (
         <div>
-            {Topics.topics.map(item => (
-                <div key={item.subtopics.id} className={classes.block}>
-                    <p>{item.subtopics.name}</p>
+            {subtopics.map(subtopic => (
+                <div onClick={() => SubHandler(subtopic.name)} key={subtopic.id} className={classes.sublock}>
+                    <p>{subtopic.name}</p>
                 </div>
-            )) /*problem*/}
+            ))}
         </div>
     );
 }
