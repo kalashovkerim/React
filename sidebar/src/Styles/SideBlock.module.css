@@ -21,11 +21,13 @@
 {
 
     text-align: center;
-    background-color: #6264A7;
+    background-color: #A1A1EA;
     width: 200px;
     height: auto;
     word-wrap: break-word;
     color: white;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
 }
 .sublock
 {
@@ -35,17 +37,22 @@
     height: auto;
     word-wrap: break-word;
     color: black;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
 }
 
 .block:hover
 {
     background-color: #464775;
     cursor: pointer;
+
 }
 .sublock:hover
 {
     background-color:#1b263b ;
     color: white;
+
 }
+
 
 
