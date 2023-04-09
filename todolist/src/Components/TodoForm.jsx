@@ -41,7 +41,7 @@ function TodoForm() {
         setTodos(newTodos);
         setTimeout(function() {deleteTask(index); }, 1000);
     };
-    const DisplayData = () => {
+    const DisplayData = React.useMemo(() => {
         return (
             <tbody>
             {todos.map((todo, index) => (
@@ -49,13 +49,14 @@ function TodoForm() {
                     <td>{todo.task}</td>
                     <td>{todo.description}</td>
                     <td>
-                        <input type="checkbox" checked={todo.done}  onChange={() => toggleDone(index)} />
+                        <input type="checkbox" checked={todo.done} onChange={() => toggleDone(index)} />
                     </td>
                 </tr>
             ))}
             </tbody>
         );
-    }
+    },[todos]);
+
     return (
         <div className="bg">
             <h1>TODOLIST</h1>
@@ -74,7 +75,7 @@ function TodoForm() {
                             <th>Done</th>
                         </tr>
                         </thead>
-                           {DisplayData()}
+                           {DisplayData}
                     </table>
                 </div>
             </div>

@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b007234b-0fe6-43c1-b56c-120690317843" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-search/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/movie-search/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-search/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/movie-search/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/test",
+    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/authorization",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,7 +106,9 @@
       <workItem from="1678999532509" duration="144000" />
       <workItem from="1679003775226" duration="843000" />
       <workItem from="1679952459156" duration="1455000" />
-      <workItem from="1680435123195" duration="799000" />
+      <workItem from="1680435123195" duration="1044000" />
+      <workItem from="1680476113119" duration="35000" />
+      <workItem from="1680600851122" duration="338000" />
     </task>
     <servers />
   </component>
