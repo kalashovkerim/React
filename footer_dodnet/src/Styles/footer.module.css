@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Popins-Medium";
+    src: url("../resources/Poppins/Poppins-Medium.ttf");
+}
+
+
+.myfooter {
+    display: flex;
+    justify-self: end;
+    width: 100%;
+    height: 400px;
+    background-color: #282c34;
+}

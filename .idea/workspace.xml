@@ -38,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/authorization",
+    "last_opened_file_path": "C:/Users/kerim/WebstormProjects/test/footer_dodnet",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -109,6 +109,7 @@
       <workItem from="1680435123195" duration="1044000" />
       <workItem from="1680476113119" duration="35000" />
       <workItem from="1680600851122" duration="338000" />
+      <workItem from="1681036790938" duration="169000" />
     </task>
     <servers />
   </component>
